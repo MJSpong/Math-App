@@ -11,6 +11,11 @@
 		C99DFE5725D0FAC600B4A5E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFE5625D0FAC600B4A5E9 /* ContentView.swift */; };
 		C99DFE5925D0FAC700B4A5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99DFE5825D0FAC700B4A5E9 /* Assets.xcassets */; };
 		C99DFE5C25D0FAC700B4A5E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99DFE5B25D0FAC700B4A5E9 /* Preview Assets.xcassets */; };
+		C99DFE6B25D10B4600B4A5E9 /* Theorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFE6A25D10B4600B4A5E9 /* Theorem.swift */; };
+		C99DFE6E25D10BAE00B4A5E9 /* TheoremModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFE6D25D10BAE00B4A5E9 /* TheoremModel.swift */; };
+		C99DFE7125D10DCC00B4A5E9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFE7025D10DCC00B4A5E9 /* DataService.swift */; };
+		C99DFE7525D10DFF00B4A5E9 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C99DFE7425D10DFF00B4A5E9 /* data.json */; };
+		C99DFE7825D10F4700B4A5E9 /* TheoremDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DFE7725D10F4700B4A5E9 /* TheoremDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		C99DFE5825D0FAC700B4A5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99DFE5B25D0FAC700B4A5E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C99DFE5D25D0FAC700B4A5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99DFE6A25D10B4600B4A5E9 /* Theorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theorem.swift; sourceTree = "<group>"; };
+		C99DFE6D25D10BAE00B4A5E9 /* TheoremModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoremModel.swift; sourceTree = "<group>"; };
+		C99DFE7025D10DCC00B4A5E9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C99DFE7425D10DFF00B4A5E9 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		C99DFE7725D10F4700B4A5E9 /* TheoremDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoremDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				C99DFE5425D0FAC600B4A5E9 /* Math_App.swift */,
-				C99DFE5625D0FAC600B4A5E9 /* ContentView.swift */,
+				C99DFE6525D10AC400B4A5E9 /* Views */,
+				C99DFE6625D10ACA00B4A5E9 /* ViewModels */,
+				C99DFE6725D10ADA00B4A5E9 /* Models */,
+				C99DFE6925D10AEF00B4A5E9 /* Services */,
+				C99DFE6825D10AE800B4A5E9 /* Data */,
 				C99DFE5825D0FAC700B4A5E9 /* Assets.xcassets */,
 				C99DFE5D25D0FAC700B4A5E9 /* Info.plist */,
 				C99DFE5A25D0FAC700B4A5E9 /* Preview Content */,
@@ -67,6 +81,47 @@
 				C99DFE5B25D0FAC700B4A5E9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C99DFE6525D10AC400B4A5E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C99DFE5625D0FAC600B4A5E9 /* ContentView.swift */,
+				C99DFE7725D10F4700B4A5E9 /* TheoremDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C99DFE6625D10ACA00B4A5E9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C99DFE6D25D10BAE00B4A5E9 /* TheoremModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C99DFE6725D10ADA00B4A5E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C99DFE6A25D10B4600B4A5E9 /* Theorem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C99DFE6825D10AE800B4A5E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C99DFE7425D10DFF00B4A5E9 /* data.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C99DFE6925D10AEF00B4A5E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C99DFE7025D10DCC00B4A5E9 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99DFE5C25D0FAC700B4A5E9 /* Preview Assets.xcassets in Resources */,
+				C99DFE7525D10DFF00B4A5E9 /* data.json in Resources */,
 				C99DFE5925D0FAC700B4A5E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99DFE7125D10DCC00B4A5E9 /* DataService.swift in Sources */,
+				C99DFE6B25D10B4600B4A5E9 /* Theorem.swift in Sources */,
+				C99DFE7825D10F4700B4A5E9 /* TheoremDetailView.swift in Sources */,
 				C99DFE5725D0FAC600B4A5E9 /* ContentView.swift in Sources */,
+				C99DFE6E25D10BAE00B4A5E9 /* TheoremModel.swift in Sources */,
 				C99DFE5525D0FAC600B4A5E9 /* Math_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
